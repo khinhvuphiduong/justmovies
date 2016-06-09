@@ -3,9 +3,9 @@ package khanhnh.demo.dbhelper;
 import java.sql.*;
 
 public class DatabaseConnection {
-	private String url="jdbc:mysql://localhost:3306/JustMovies";
+	private String url="jdbc:mysql://222.252.17.192:3306/JustMovies";
 	private  String driverClass="com.mysql.jdbc.Driver";
-	private String username="root";
+	private String username="khanhnh";
 	private String password="khanhlaso1";
 	private Connection connection=null;
 	
