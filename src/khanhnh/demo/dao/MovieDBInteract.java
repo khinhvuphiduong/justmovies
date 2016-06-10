@@ -7,12 +7,15 @@ import java.sql.SQLException;
 import com.mysql.jdbc.Statement;
 
 import khanhnh.demo.dbhelper.DatabaseConnection;
+import khanhnh.demo.entities.Movie;
 public class MovieDBInteract {
 	private String insertSQL="insert into movies values(?,?,?,?,?)";
 	private String selectSQL="select * from movies where ";
 	private DatabaseConnection dbc;
+	private MoviePersistor mp;
 	public MovieDBInteract(){
 		dbc=new DatabaseConnection();
+		mp=new MoviePersistor();
 	}
 	public void CreateMovie(String name, String director, String mainactor, int publishyear, String description){
 		try {
@@ -33,6 +36,10 @@ public class MovieDBInteract {
 		finally {
 			dbc.CloseConnection();
 		}
+	}
+	
+	public void CreateMovie(Movie movie){
+		mp.PersistMovie(movie);
 	}
 	
 	public void QueryMovies(String searchtext){
