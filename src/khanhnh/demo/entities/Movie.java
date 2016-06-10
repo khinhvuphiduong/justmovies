@@ -1,8 +1,5 @@
 package khanhnh.demo.entities;
 
-import javax.persistence.Entity;
-
-@Entity
 public class Movie {
 	private int id;
 	private String movie_name;

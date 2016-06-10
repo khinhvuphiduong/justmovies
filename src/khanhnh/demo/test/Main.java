@@ -6,24 +6,24 @@ import khanhnh.demo.dao.MoviePersistor;
 import khanhnh.demo.entities.Movie;
 
 public class Main {
-
 	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
 		//MovieDBInteract mvi=new MovieDBInteract();
 		//mvi.QueryMovies("");
 		
-		Movie mv=new Movie();
-		mv.setMovie_name("Kiss Ass");
-		mv.setDirector("Unknow");
-		mv.setDirector("Unknow");
-		mv.setDescription("Comedy Film");
-		mv.setYear_of_publishing(2010);
-		
+//		Movie mv=new Movie();
+//		mv.setMovie_name("Prison Break");
+//		mv.setDirector("Unknow");
+//		mv.setDirector("Unknow");
+//		mv.setDescription("Strategy Film");
+//		mv.setYear_of_publishing(2010);
+//		
 		MoviePersistor mp=new MoviePersistor();
-		mp.PersistMovie(mv);
+//		mp.PersistMovie(mv);
 		//mp.FindMovie(1);
+		mp.GetMovie(1);
 		
-		MovieDBInteract mvi=new MovieDBInteract();
-		mvi.QueryMovies("");
+		//MovieDBInteract mvi=new MovieDBInteract();
+		//mvi.QueryMovies("");
 	}
 }

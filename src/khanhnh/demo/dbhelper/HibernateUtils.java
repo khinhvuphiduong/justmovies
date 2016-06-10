@@ -14,10 +14,10 @@ public class HibernateUtils{
 	
 	public HibernateUtils(){
 		try{
-//			Configuration cf=new Configuration();
-//			cf.configure();
-//			ServiceRegistry sr=new StandardServiceRegistryBuilder().applySettings(cf.getProperties()).build(); 
-//			sessionFactory=cf.buildSessionFactory(sr);
+			Configuration cf=new Configuration();
+			cf.configure();
+			ServiceRegistry sr=new StandardServiceRegistryBuilder().applySettings(cf.getProperties()).build(); 
+			sessionFactory=cf.buildSessionFactory(sr);
 			
 			StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder()
 				    .configure()
